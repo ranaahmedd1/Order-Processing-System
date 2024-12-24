@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ordering  Website</title>
+    <link rel="stylesheet" href="../static/Css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      hi,rana
+      {% for idx, product in data %}
+      <div class="layer">
+            <h2> product name: {{ product.name }}</h2>
+            <h3>stock_quantity :{{ product.stock_quantity }}</h3>
+            <h4>price : ${{ product.price }}</h4>
+      </div>
+      {% endfor %}
+        </div>
+
+  </body>
+</html>
